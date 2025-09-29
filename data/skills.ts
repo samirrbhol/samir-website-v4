@@ -1,4 +1,4 @@
-export const skillsList = [
+export const skillsList: { name: string; level: number }[] = [
   {
     "name": "Program Management",
     "level": 99
@@ -27,4 +27,4 @@ export const skillsList = [
     "name": "Change Management",
     "level": 95
   }
-] as const;
+];
