@@ -1,4 +1,4 @@
-export const aboutParas = [
+export const aboutParas: string[] = [
   "About Me:",
   "I am a builder at heart, driven by the challenge of transforming complex visions into tangible, high-impact realities. With nearly two decades of experience, I partner with global leaders in the automotive and manufacturing sectors to guide them through digital evolution. My approach is rooted in a simple belief: that technology should serve people and processes to unlock new levels of efficiency and value.",
   "Currently, I am immersed in Volvo Cars' digital transformation, where I focus on empowering teams with DevOps practices and pioneering the use of Gen AI to solve real-world business challenges. My success is measured not by titles, but by the strength of the partnerships I build and the lasting results we achieve together\u2014from signing strategic deals to delivering critical projects that redefine what's possible. My previous tenure as a Delivery Partner at IBM/Kyndryl honed my skills in managing multi-million-dollar programs, fostering executive client relationships, and leading cross-functional teams to success in the automotive and manufacturing sectors. I am a proven leader dedicated to delivering critical deadlines, optimizing processes, and building long-term partnerships that achieve transformative outcomes.",
@@ -39,4 +39,4 @@ export const aboutParas = [
   "Got the \u201cRockstar Award\u201d for successfully solutioning highest number of clients in 2018.",
   "Got the \u201cOutstanding Technical Achievement Award\u201d for deploying security measures on the product depending on client requirement.",
   "Got the \u201cEminence and Excellence Award\u201d for saving $100,000 quarterly by implementing automation in server monitoring."
-] as const;
+];
