@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --fg: 22 22 22;
+  --accent: 15 98 254;
+}
+
+/* Left rail navigation */
+.rail {
+  position: fixed;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  z-index: 30;
+}
+.rail a {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .55rem .85rem;
+  border-radius: .65rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+.rail a:hover {
+  transform: translateX(2px);
+  border-color: #cbd5e1;
+}
+
+/* Mobile: move rail to bottom */
+@media (max-width: 768px) {
+  .rail {
+    top: auto;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    background: rgba(0,0,0,0.04);
+    padding: .5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(6px);
+  }
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,.05);
+}
+
+/* Marquee (quotes) */
+.marquee {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: #161616;
+  color: #fff;
+  overflow: hidden;
+  z-index: 20;
+  border-top: 1px solid #0f62fe;
+}
+.marquee__inner {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: marquee 28s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
